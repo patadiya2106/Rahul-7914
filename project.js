@@ -107,14 +107,17 @@ console.log("num3 and num4 are equal : ", num3 == num4);
 
 // 4.(a-b-c)*(a-b-c) = a**2 + b**2 + c**2 - 2*a*b - 2*a*c + 2*b*c;
 
-let x = 6, y = 3, z = 2;
-let lhs4 = (x - y - z) * (x - y - z);
-let rhs4 = x ** 2 + y ** 2 + z ** 2 - 2 * x * y - 2 * x * z + 2 * y * z;
+let x = 10, y = 6, z = 4;
 
-console.log("LHS : ", lhs4);
-console.log("RHS : ", rhs4);
+let num7 = (x - y - z) * (x - y - z);
 
-console.log("Are LHS and RHS are Equal?", lhs4 === rhs4);
+console.log("left side number : ", num7);
+
+let num8 = x ** 2 + y ** 2 + z ** 2 - 2 * x * y - 2 * x * z + 2 * y * z;
+
+console.log("right side number : ", num8);
+
+console.log("num7 and num8 are equal : ", num7 == num8);
 
 // Output:-  true
 
@@ -122,14 +125,14 @@ console.log("Are LHS and RHS are Equal?", lhs4 === rhs4);
 
 // 5 (a-b)**3 = a**3 - 3*a**2*b + 3*a**2*b - b**3
 
-let s = 5, t = 3;
-let lhs5 = (s - t) ** 3;
-let rhs5 = s ** 3 - 3 * s ** 2 * t + 3 * s * t ** 2 - t ** 3;
+let s = 10, t = 4;
+let num9 = (s - t) ** 3;
+let num10 = s ** 3 - 3 * s ** 2 * t + 3 * s * t ** 2 - t ** 3;
 
-console.log("LHS : ", lhs5);
-console.log("RHS : ", rhs5);
+console.log("left side numbr : ", num9);
+console.log("right side number : ", num10);
 
-console.log("Are LHS and RHS are Equal?", lhs5 === rhs5);
+console.log("num9 and num10 are equal : ", num9 == num10);
 
 // Output:-   true
 
