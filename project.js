@@ -127,9 +127,11 @@ console.log("num7 and num8 are equal : ", num7 == num8);
 
 let s = 10, t = 4;
 let num9 = (s - t) ** 3;
-let num10 = s ** 3 - 3 * s ** 2 * t + 3 * s * t ** 2 - t ** 3;
 
 console.log("left side numbr : ", num9);
+
+let num10 = s ** 3 - 3 * s ** 2 * t + 3 * s * t ** 2 - t ** 3;
+
 console.log("right side number : ", num10);
 
 console.log("num9 and num10 are equal : ", num9 == num10);
