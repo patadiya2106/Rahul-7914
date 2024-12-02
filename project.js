@@ -1,147 +1,134 @@
-// 1 . Write a Javascript program to find thearea of a triangle
-
-let base = 15; height = 12;
-
-let trianglearea = (base * height) / 2;
-
-console.log("Area of a Triangle : ", trianglearea);
-
-// OUTPUT :- 1. Area of a Triangle :  90
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 2. Write a Javascript program to convert temp.. to and celsius , fahrenhit
-
-let celsius = 35;
-
-let fahrenhit = (celsius * 9 / 5) + 32;
-
-console.log("covert celsius into fahrenhit : ", fahrenhit);
-
-// OUTPUT : - 2. covert celsius into fahrenhit : 95
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//  3. Wrtie a Javascript program to find the area of rectangle. 
-
-let length = 45, breadth = 90;
-let rectangleArea = length * breadth;
-
-console.log("Area Of Rectangle = " + rectangleArea);
-
-// Output :- 3. Area Of Rectangle = 4050
-
-// //////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 4. Wrtie a Javascript program to find the area of circle.
-
-let radius = 15;
-let circleArea = 3.14 * radius**2;
-
-console.log("Area Of Circle = ", circleArea);
-
-// Output : - 4. Circle Area = 706.50
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 5. Wrtie a Javascript program to convert feet into inches.
-
-let feet = 6;
-let inches = feet * 12;
-
-console.log("convert feet into inches : " , inches);
-
-// Output :- 5. 60 inches
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// 6. Write a javascript program to calculate given number
-
-// 1. a**2 - b**2 = (a - b)(a + b);
-
-let a = 9, b = 5;
-
-let num1 = a ** 2 - b ** 2;
-
-console.log("left side number : ", num1);
-
-let num2 = (a - b) * (a + b);
-console.log("right side number: ", num2);
-
-console.log("mum1 and num2 are equal : ", num1 == num2);
-
-// output : - True
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
-// 2.(j-k)**(j-k)=j** - 2*J*K + k**
-
-let j = 21, k = 15;
-
-let num5 = j ** 2 - 2 * j * k + k ** 2
-console.log("left side number : ", num5);
-let num6 = (j - k) ** 2;
-console.log("right side number: ", num6);
-console.log("num4 and num6 are equal : ", num5 == num6);
-
-// output : true.
-
-/////////////////////////////////////////////////////////////////////////
-
-//  3. (p+q+r)(p+q+r)= p**2 + q**2 + r**2 + 2pq + 2pr + 2qr;
-
-let p = 20, q = 10, r = 8;
-
-let num3 = (p + q + r) ** 2;
-
-console.log("left side number : ", num3);
-
-let num4 = p ** 2 + q ** 2 + r ** 2 + 2 * (p * q) + 2 * (p * r) + 2 * (q * r);
-
-console.log("left side number : ", num4);
-
-console.log("num3 and num4 are equal : ", num3 == num4);
-
-
-// output : true.
-
-// 4.(a-b-c)*(a-b-c) = a**2 + b**2 + c**2 - 2*a*b - 2*a*c + 2*b*c;
-
-let x = 10, y = 6, z = 4;
-
-let num7 = (x - y - z) * (x - y - z);
-
-console.log("left side number : ", num7);
-
-let num8 = x ** 2 + y ** 2 + z ** 2 - 2 * x * y - 2 * x * z + 2 * y * z;
-
-console.log("right side number : ", num8);
-
-console.log("num7 and num8 are equal : ", num7 == num8);
-
-// Output:-  true
-
-// ---------------------------------------------------------------------------------------------------------------------
-
-// 5 (a-b)**3 = a**3 - 3*a**2*b + 3*a**2*b - b**3
-
-let s = 10, t = 4;
-let num9 = (s - t) ** 3;
-
-console.log("left side numbr : ", num9);
-
-let num10 = s ** 3 - 3 * s ** 2 * t + 3 * s * t ** 2 - t ** 3;
-
-console.log("right side number : ", num10);
-
-console.log("num9 and num10 are equal : ", num9 == num10);
-
-// Output:-   true
-
-
-
-
-
+// 1.Enter electricity unit and calculate amuont bill
+
+// let unit = + prompt("Please Enter your unit");
+// let bill = 0 , extraCharge = 0 , totalBill = 0;
+
+// if (unit >= 0 && unit <= 50) {
+//     bill += unit * 1;
+// } else if (unit <= 150) {
+//     bill += (50 * 1) + (unit - 50) * 2;
+// } else if (unit <= 250) {
+//     bill += (50 * 1) + (unit - 150) * 3;
+// } else {
+//     bill += (50 * 1) + (100 * 2) + (100 * 3) + (unit - 250) * 4;
+// }
+// if (unit > 150){
+//     extraCharge = bill * 0.20;
+//     totalBill += extraCharge + bill;
+// }
+// console.log("Bill Amounts : " , bill)
+// console.log("Bill Charges : ", extraCharge)
+// console.log("Total Bill Amounts : " , totalBill);
+
+
+// ----------------------------------------------------------------------------------------------------
+
+
+// 2. Write a Program to print season according user input using switch case.
+
+// let Season = +prompt("Enter a Number (1-12): ");
+
+// switch (Season) {
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//         console.log("This season is a WINTER");
+//         break;
+//     case 5:
+//     case 6:
+//     case 7:
+//     case 8:
+//         console.log("This season is a SUMMER");
+//         break;
+
+//     case 9:
+//     case 10:
+//     case 11:
+//     case 12:
+//         console.log("This season is a MOONSOON");
+//         break;
+//     default:
+//         console.log("Please enter a valid number (1-12).");
+//
+
+// ----------------------------------------------------------------------------------------------------
+
+// 3.Calculate a total interst
+
+        // let amount, year;
+
+        // amount = Number(prompt("Enter Amount", amount));
+        
+        // year = Number(prompt("Enter Year", year));
+        
+        // let Rate;
+
+        // if (year > 3 && year <= 5){
+        //     Rate = 3;
+        // } 
+        // else if (year > 5 && year <= 8){
+        //     Rate = 5;
+        // } 
+        // else if (year > 8 && year <= 12){
+        //     Rate = 12;
+        // } 
+        // else{
+        //     Rate = 15;
+        // }
+        
+        // let interest = (amount * Rate * year) / 100;
+
+        // console.log("Principal: " + amount);
+        // console.log("Rate: " + Rate + "%");
+        // console.log("Years: " + year);
+        // console.log("Total Interest: " + interest);
+        
+        
+// ------------------------------------------------------------------------------------------------------------------
+
+// 4. Cheack Voting Eligibility
+
+// let ages = +prompt("Enter Your Ages :");
+
+// if(ages >= 0  &&  ages < 18){
+//     console.log("You Can't Eligible For Vote :",ages);
+// }
+// else if(ages >= 18){
+//     console.log("You Can Eligible For Vote :",ages);
+// }
+// else{
+//     console.log("Invalid Input. Please Enter a Positive Number :",ages);
+// }
+
+
+// ----------------------------------------------------------------------------------------------------
+
+
+
+// 5.Classify Age Groups
+
+// let age = 26;
+
+// if(age >= 0 && age <= 12)
+// {
+//     console.log(age," You Are a Child...");
+// }
+// else
+// {
+//     if(age >= 13 && age <= 18)
+//     {
+//         console.log(age," You Are in Teen..."); 
+//     }
+//     else if(age >= 19 && age <= 64)
+//     {
+//         console.log(age," You Are in Adult...");
+//     }
+//     else if(age >= 65)
+//     {
+//         console.log(age," You Are in Senior...");
+//     }
+// }
 
 
 
