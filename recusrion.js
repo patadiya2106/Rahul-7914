@@ -30,19 +30,14 @@
 
 // fabonacci Series
 
-function fab(r, s, t) {
-    for(let i = )
-    if (r == 0) {
-        console.log(r)
+function fab(r, a = 0, b=1) {
+    if (r === 0) {
+        return 0;
     }
-    else if (r == 1) {
-        console.log(t)
-    }
-    else {
-        return  t = r + s;
-                 r = s;
-                s = t;
 
-    }
+    console.log(a);
+    
+    fab(r - 1, b, a + b);
+    
 }
-console.log(fab(3));
+fab(10);
