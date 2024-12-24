@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <button onclick="generatenumber()">Click Here</button>
-    <h3 id="name"></h3>
-    <h5 id="num"></h5>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="images pr/banglow.jpg">
+            <img src="images pr/bullet.avif">
+            <img src="images pr/virat.webp">
+            <img src="images pr/bullet.avif">
+            <img src="images pr/rcb.webp">
+        </div>
+        <button class="prev" onclick="goToPreviousSlide()">&#10094;</button>
+        <button class="next" onclick="goToNextSlide()">&#10095;</button>
+    </div>
 
 
-
-    <script src="object.js"></script>
+    <script src="slider.js"></script>
 </body>
+
 </html>
