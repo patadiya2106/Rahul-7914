@@ -40,3 +40,25 @@ const gautam = new rahul();
 gautam.hello();
 
 ///////////////////////////////////////////////////////////////////////
+
+class Animal {
+    data() {
+        console.log("Smit is an animal lover");
+    }
+}
+
+class Dog extends Animal {
+    data() {
+        console.log("gautam is lion ");
+    }
+}
+
+class Cat extends Animal {
+    data() {
+        console.log("The cat have 4 legs.");
+    }
+}
+
+const animals = new Dog();
+
+animals.data();
