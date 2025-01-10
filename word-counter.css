@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #11c4f1;
+    color: #0cdae9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 350px; 
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    border: 0;
+}
+
+.box {
+    border-top: 3px dashed rgb(4, 151, 219);
+    background-color:white;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 15px;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.output p {
+    font-size:50px;
+    letter-spacing: 1px;
+}
+
+.output span {
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+}
