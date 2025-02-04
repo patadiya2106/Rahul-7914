@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Management</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/addtocart.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">RJ Creation</h1>
+
+    <!-- Product Form -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Add Product</h5>
+      </div>
+      <div class="card-body">
+        <form id="productForm">
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" id="productName" required />
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Product Price</label>
+            <input type="number" class="form-control" id="productPrice" required />
+          </div>
+          <div class="form-group">
+            <label for="productType">Product Type</label>
+            <input type="text" class="form-control" id="productType" required />
+          </div>
+          <div class="form-group">
+            <label for="productImage">Product Image URL</label>
+            <input type="text" class="form-control" id="productImage" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Product List -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Product List</h5>
+      </div>
+      <div class="card-body" id="productList">
+        <!-- Products will be dynamically added here -->
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5>Cart</h5>
+      </div>
+      <div class="card-body" id="cart">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="card-footer">
+        <p>Total Price: <span id="totalPrice">0</span></p>
+        <button class="btn btn-success" onclick="proceedToPayment()">
+          Proceed to Payment
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
