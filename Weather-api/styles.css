@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark gray text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff; /* White background for the container */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #007bff; /* Blue heading */
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+#cityInput:focus {
+  border-color: #0056b3; /* Darker blue on focus */
+}
+
+#searchBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff; /* Blue button */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#searchBtn:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.weather-info {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #007bff; /* Blue city name */
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555; /* Gray text for details */
+}
