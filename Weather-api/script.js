@@ -15,31 +15,31 @@ searchBtn.addEventListener("click", () => {
 function fetchWeather(city) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // API URL
 
-  fetch(apiUrl) // Fetch data from the API
+  fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
-        throw new Error("City not found. Please try again."); // Throw an error if the city is not found
+        throw new Error("City not found. Please try again.");
       }
-      return response.json(); // Convert the response to JSON
+      return response.json();
     })
     .then((data) => {
-      showWeather(data); // Call the function to display weather data
+      showWeather(data);
     })
     .catch((error) => {
-      weatherInfo.innerHTML = `<p>${error.message}</p>`; // Display the error message
+      weatherInfo.innerHTML = `<p>${error.message}</p>`;
     });
 }
 
 function showWeather(data) {
-  const { name } = data; // City name
-  const { temp, humidity } = data.main; // Temperature and humidity
-  const { speed } = data.wind; // Wind speed
+  const { name } = data;
+  const { temp, humidity } = data.main;
+  const { speed } = data.wind;
 
   const weatherHtml = `
-        <h2>${name}</h2>
-        <p>Temperature: ${temp}°C</p>
+        <h2>${name} ☁️</h2>
+        <div class="temperature">${temp}°C</div>
         <p>Humidity: ${humidity}%</p>
         <p>Wind Speed: ${speed} m/s</p>
     `;
-  weatherInfo.innerHTML = weatherHtml; // Insert the weather details into the container
+  weatherInfo.innerHTML = weatherHtml;
 }
