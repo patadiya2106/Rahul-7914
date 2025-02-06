@@ -1,0 +1,89 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url("https://www.shutterstock.com/image-illustration/coronavirus-covid19-infection-3d-medical-600nw-1717171993.jpg");
+            display: flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        input[type="date"] {
+            padding: 12px;
+            width: 220px;
+            margin-bottom: 20px;
+            border: 1px solid #ecc0c0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .box{
+            margin-bottom:20px ;
+            padding: 20px;
+            border-radius: 20px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9UqW1VJ4KDBsoHhowP5XsWpSdPCDZ6BzTkw&s");
+        }
+        .card {
+            text-align: center;
+            background-color: #0eecb8;
+            padding: 10px;
+            border-radius: 10%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
+
+        }
+        .card h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color:black;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+
+        .data {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .data input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #cccccc4b;
+            border-radius: 8px;
+        }
+
+        .data button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .data button:hover {
+            background-color: #0056b3;
+        }
